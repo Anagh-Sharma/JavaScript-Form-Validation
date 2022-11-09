@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/21aa754e66.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <div class="container text-center">
+                <span>--- Registration Form ---</span>
+                <hr>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <table id="form">
+                    <tr>
+                        <td class="input-label">Enter Name</td>
+                        <td>
+                            <input type="text" placeholder="Enter your name" class="box input-box">
+                        </td>
+                        <td class="row">
+                            <span class="err-name err-span"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        <td class="input-label">Enter Username</td>
+                        <td>
+                            <input type="text" placeholder="Enter your username" class="box-2 input-box">
+                        </td>
+                        <td class="row">
+                            <span class="err-username err-span"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="input-label">Enter Email</td>
+                        <td>
+                            <input type="text" placeholder="Enter your email-ID" class="box-email input-box">
+                        </td>
+                        <td class="row">
+                            <span class="err-email err-span"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="input-label">Enter Password</td>
+                        <td>
+                            <input type="password" class="box-3 input-box" placeholder="Enter your password">
+                            <span class="box-3-visiblity-span">
+                                <input type="checkbox" class="box-3-visiblity">
+                                <span class="box-3-visiblity-icon"></span>
+                            </span>
+                        </td>
+                        <td class="row">
+                            <span class="err-password err-span"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="input-label">Confirm Password</td>
+                        <td>
+                            <input type="password" class="box-4 input-box" placeholder="Enter your password">
+                            <span class="box-4-visiblity-span">
+                                <input type="checkbox" class="box-4-visiblity">
+                                <span class="box-4-visiblity-icon"></span>
+                            </span>
+                        </td>
+                        <td class="row">
+                            <span class="err-confirm-password err-span"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="submit-btn">
+                            <input type="submit" class="form-submit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="submit-msg">
+                            <!-- <span class="form-submit-msg">SUCCESS!</span> -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>    
+
+</body>
+</html>

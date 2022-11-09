@@ -1,0 +1,221 @@
+/* Global Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+.justify-space-around {
+    justify-content: space-around;
+}
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+.justify-space-center {
+    justify-content: center;
+}
+.justify-space-left {
+    justify-content: left;
+}
+.justify-space-right {
+    justify-content: right;
+}
+
+.align-items-center {
+    align-items: center;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.grid {
+    display: grid;
+}
+
+.w-100 {
+    width: 100%;
+}
+.underline{
+    text-decoration: underline;
+}
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 960px;
+    }   
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 740px;
+    }   
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }   
+}
+
+/* Header */
+#header{
+    background-color: #fff;
+    /* margin-bottom: 24px; */
+    width: 100%;
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 63px;
+}
+@media(max-width:584px){
+    #header .container>div{
+        flex-wrap: nowrap;
+        /* overflow-x: auto; */
+        scroll-snap-type: x mandatory;
+    }
+}
+#header .container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.content #form {
+    background-color: rgba(135, 207, 235, 0.475);
+    margin: 0 auto;
+    padding: 0px 260px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 34px;
+    transition-duration: 1s;
+
+    border : 3px solid #fff;
+    position: relative;
+}
+
+.content .input-label {
+    padding: 8px 4px;
+    width: 200px;
+}
+
+.content .input-box {
+    padding: 8px 4px;
+    width: 200px;
+    border-radius: 8px;
+    border-color: rgba(135, 207, 235, 0.475);
+    /* border: 0px; */
+}
+
+.err-span {
+    position: absolute;
+    z-index: 100;
+    color: red;
+    margin-left: 14px;
+    padding: 8px 4px;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+.form-submit {
+    width: 145px;
+    border-radius: 8px;
+    padding: 8px 4px;
+    margin: 20px 4px;
+    font-size: 16px;
+
+    background-color: #fff;
+
+    transition-duration: 0.5s;
+}
+
+.form-submit:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: black;
+}
+
+.submit-msg {
+    text-align: center;
+}
+
+.form-submit-msg {
+    width: 145px;
+    border-radius: 8px;
+    border: 2px dashed black;
+    padding: 8px 12px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Password Visibility eye icon */
+.box-3-visiblity-span, .box-4-visiblity-span {
+    position: relative;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.box-3-visiblity, .box-4-visiblity{
+    z-index: 100;
+    transform: scale(1.5);
+    margin-left: 8px;
+    opacity: 0;
+}
+
+.box-3-visiblity-icon, .box-4-visiblity-icon{
+    position: absolute;
+    left: 0px;
+    z-index: -100;
+
+    padding: 8px 4px;
+}
+
+
