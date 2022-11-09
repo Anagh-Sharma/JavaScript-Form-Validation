@@ -1,2 +1,2 @@
 # JavaScript-Form-Validation
-A simple page for form validation using JavaScript.
+A simple page for demonstrating form validation using JavaScript.
